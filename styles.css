@@ -1,12 +1,12 @@
 body {
     margin: 100px;
     background-color: #eee;
-    font-family: Verdana;
+    font-family: cursive;
 }
 
 .card {
     width: 600px;
-    height: 510px;
+    height: 600px;
     margin: 0px auto;
     position: relative;
     perspective: 1400px;
@@ -24,11 +24,39 @@ body {
     transition: transform 1s;
     transform-style: preserve-3d;
     transform-origin: 0 0;
+    background-color: #fcf0e4;
 }
 
-.left-card img {
+.left-card .card-front {
+    color: #e87288;
+    text-align: center;
+}
+
+.left-card .card-back {
+    text-align: center;
+}
+
+.left-card .card-front img {
     width: 100%;
 }
+
+.left-card .card-back .gif img {
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-card .card-back .border img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .left-card .card-front,
 .left-card .card-back {
@@ -42,7 +70,7 @@ body {
 
 
 .left-card .card-back {
-    background-color: #f4f4f4;
+    background-color: #f9c9b9;
     transform: rotateY(180deg);
 }
 
@@ -59,12 +87,23 @@ body {
     height: 100%;
     background-color: #fff;
     text-align: center;
-    padding: 30px;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-    color: pink;
+    color: #ffb0e4;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
+    padding: 0px 20px;
+}
+
+.right-card .body-text {
+    color: #e87288;
+    margin-bottom: 25px;
+    text-align: left;
+    font-family: cursive;
+}
+
+.right-card .signature {
+    color: #ffb0e4;
 }

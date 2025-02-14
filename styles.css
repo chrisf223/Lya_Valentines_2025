@@ -107,7 +107,6 @@ body {
     color: #ffb0e4;
 }
 
-
 @media (max-width: 600px) {
     body {
         margin: 20px; /* Reduce margin for smaller screens */

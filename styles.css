@@ -107,18 +107,4 @@ body {
     color: #ffb0e4;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    .card {
-        width: 90%; /* Responsive width for smaller screens */
-        margin: 20px auto;
-    }
 
-    .right-card {
-        padding: 20px;
-    }
-
-    .left-card {
-        box-shadow: none;
-    }
-}

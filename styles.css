@@ -107,38 +107,3 @@ body {
     color: #ffb0e4;
 }
 
-@media (max-width: 600px) {
-    body {
-        margin: 20px; /* Reduce margin for smaller screens */
-    }
-
-    .card {
-        width: 100%; /* Full width for mobile */
-        height: auto; /* Allow height to adjust based on content */
-    }
-
-    .left-card {
-        height: auto; /* Allow left card height to adjust */
-        box-shadow: none; /* Remove shadow for mobile */
-        transform-origin: center; /* Adjust the card rotation axis */
-    }
-
-    .left-card .card-front img,
-    .left-card .card-back .gif img,
-    .left-card .card-back .border img {
-        width: 90%; /* Scale images to be smaller */
-    }
-
-    .right-card {
-        padding: 10px; /* Reduce padding for mobile */
-        box-sizing: border-box; /* Make sure it fits the screen */
-    }
-
-    .right-card .body-text {
-        font-size: 14px; /* Smaller text for readability */
-    }
-
-    .right-card .signature {
-        font-size: 12px; /* Adjust font size for signature */
-    }
-}

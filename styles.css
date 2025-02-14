@@ -1,7 +1,7 @@
 body {
     margin: 100px;
     background-color: #eee;
-    font-family: cursive;
+    font-family: Papyrus;
 }
 
 .card {
@@ -101,7 +101,6 @@ body {
     color: #e87288;
     margin-bottom: 25px;
     text-align: left;
-    font-family: cursive;
 }
 
 .right-card .signature {

@@ -107,3 +107,47 @@ body {
     color: #ffb0e4;
 }
 
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .card {
+        height: auto; /* Make the card height flexible */
+        max-width: 90%; /* Adjust width to fit mobile screens */
+    }
+
+    .left-card {
+        box-shadow: none;
+        transform: none; /* Remove 3D transform */
+    }
+
+    .right-card {
+        padding: 10px;
+    }
+
+    .right-card .body-text {
+        font-size: 14px; /* Reduce font size on smaller screens */
+        margin-bottom: 15px;
+    }
+
+    .right-card .signature {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .left-card .card-front img,
+    .left-card .card-back .gif img {
+        width: 100%; /* Make images scale to fit the screen */
+    }
+
+    .right-card .body-text {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .right-card .signature {
+        font-size: 14px;
+    }
+}

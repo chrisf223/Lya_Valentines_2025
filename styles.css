@@ -108,47 +108,47 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    /* Make the card take up the full viewport on mobile */
     .card {
-        width: 100vw; /* 100% of the viewport width */
-        height: 100vh; /* 100% of the viewport height */
-        margin: 0; /* Remove any margin */
-        position: absolute; /* Position it relative to the body */
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        position: absolute;
         top: 0;
         left: 0;
-        perspective: none; /* Remove 3D perspective effect */
-        transition: none; /* Disable transition */
+        perspective: none;
+        transition: none;
     }
 
-    /* Completely disable flip for left card on mobile */
+    body {
+        background-color: #fcf0e4;
+    }
+
     .left-card {
-        transform: none !important; /* No flip or 3D transformation */
-        transform-origin: center center !important; /* Make sure it doesn't rotate from any side */
-        box-shadow: none; /* Remove any shadow on mobile */
-        z-index: 1; /* Keep left card below right card initially */
-        visibility: visible; /* Ensure it is visible by default */
-        opacity: 1; /* Make sure it's fully visible */
-        display: block; /* Ensure the left card is displayed as a block */
+        transform: none !important;
+        transform-origin: center center !important;
+        box-shadow: none;
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: 100vh;
     }
 
-    /* Stack the front and back of the card vertically on mobile */
     .left-card .card-front,
     .left-card .card-back {
-        position: relative; /* Make sure both parts are stacked */
-        width: 100%; /* Full width */
-        height: auto; /* Let the height be dynamic based on the content */
-        backface-visibility: visible; /* Make sure the backface is visible when the front is shown */
-        display: block; /* Stack the front and back vertically */
+        position: relative;
+        width: 100%;
+        height: auto;
+        backface-visibility: visible;
+        display: block;
     }
 
-    /* Adjust the styling of the front and back content */
     .left-card .card-front img,
     .left-card .card-back img {
-        width: 100%; /* Make the images full width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 
-    /* Initially hide the right card and position it on top of the left card */
     .right-card {
         opacity: 0;
         visibility: hidden;
@@ -156,29 +156,29 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 2; /* Ensure right card appears above left card */
+        height: 100%;
+        z-index: 2;
         box-shadow: none;
     }
 
-    /* When the card is opened, fade the right card in on top of the left card */
     .card.open .right-card {
         opacity: 1;
         visibility: visible;
-        z-index: 1; /* Keep the right card above the left card */
-        background-color: #fcf0e4;
+        z-index: 1;
+        background-color: transparent;
     }
 
-    /* When the card is opened, hide the left card */
     .card.open .left-card {
-        opacity: 0; /* Fade out the left card */
-        visibility: hidden; /* Hide the left card when the card is open */
-        z-index: -1; /* Move it behind the right card */
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
     }
 
     .card.open {
         left: 0;
     }
 }
+
 
 
 
